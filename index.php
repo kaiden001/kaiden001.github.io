@@ -258,7 +258,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div>
                     <!--==================== SKILLS 3====================-->
                     <div class="skills_content skills_close">
@@ -381,8 +380,8 @@
                     </div>
 
 
-                      <!--==================== QUALIFICATION CONTENT 2====================-->
-                      <div class="qualification_content" data-content id="work">
+                    <!--==================== QUALIFICATION CONTENT 2====================-->
+                    <div class="qualification_content" data-content id="work">
                         <!--==================== QUALIFICATION 1====================-->
                         <div class="qualification_data">
                             <div>
@@ -390,7 +389,7 @@
                                 <span class="qualification_subtitle">LGU-GMA</span>
                                 <div class="qualification_calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                  2023
+                                    2023
                                 </div>
                             </div>
 
@@ -418,7 +417,7 @@
 
                         </div> -->
 
-                        
+
                     </div>
 
 
@@ -428,7 +427,84 @@
 
         <!--==================== SERVICES ====================-->
         <section class="services section" id="services">
+            <h2 class="section_title">Services</h2>
+            <span class="section_subtitle">What I offer</span>
+            <div class="services_container container grid">
+                <!--==================== SERVICES 1 ====================-->
+                <div class="services_content">
+                    <div>
+                        <i class="uil uil-web-grid services_icon"></i>
+                        <h3 class="services_title">Ui/Ux <br> Designer</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services_button">
+                        View More
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </span>
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <h4 class="services_modal-title">Ui/Ux <br> Designer</h4>
+                        </div>
+                        <i class="uil uil-times services_modal-close"></i>
 
+                        <ul class="services_modal-services grid">
+                            <li class="services_modal-service">
+                                <i class="uil uil-web-grid services_modal-icon"></i>
+                                <p>I develop the user interface.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-web-grid services_modal-icon"></i>
+                                <p>Web page development.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-web-grid services_modal-icon"></i>
+                                <p>I create ux element interactions.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-web-grid services_modal-icon"></i>
+                                <p>I position your company brand.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <!--==================== SERVICES 2 ====================-->
+                 <div class="services_content">
+                    <div>
+                        <i class="uil uil-web-grid services_icon"></i>
+                        <h3 class="services_title">Ui/Ux <br> Designer</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services_button">
+                        View More
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </span>
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <h4 class="services_modal-title">Ui/Ux <br> Designer</h4>
+                        </div>
+                        <i class="uil uil-times services_modal-close"></i>
+
+                        <ul class="services_modal-services grid">
+                            <li class="services_modal-service">
+                                <i class="uil uil-web-grid services_modal-icon"></i>
+                                <p>I develop the user interface.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-web-grid services_modal-icon"></i>
+                                <p>Web page development.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-web-grid services_modal-icon"></i>
+                                <p>I create ux element interactions.</p>
+                            </li>
+                            <li class="services_modal-service">
+                                <i class="uil uil-web-grid services_modal-icon"></i>
+                                <p>I position your company brand.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <!--==================== PORTFOLIO ====================-->
