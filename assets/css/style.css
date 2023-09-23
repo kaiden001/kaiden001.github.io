@@ -1018,6 +1018,38 @@ img {
   .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
+  .nav_icon,
+  .nav_close,
+  .nav_toggle {
+    display: none;
+  }
+  .nav_list {
+    display: flex;
+    column-gap: 2rem;
+  }
+  .nav_menu {
+    margin-left: auto;
+  }
+  .change-theme {
+    margin: 0;
+    margin-left: var(--mb-1);
+  }
+  .home_container {
+    row-gap: 5rem;
+  }
+  .home_content {
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+  }
+  .home_blob {
+    width: 270px;
+  }
+  .home_scroll {
+    display: block;
+  }
+  .home_scroll_button {
+    margin-left: 3rem;
+  }
 }
 /* For large devices */
 
