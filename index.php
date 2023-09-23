@@ -443,32 +443,36 @@
                     <div class="services_modal">
                         <div class="services_modal-content">
                             <h4 class="services_modal-title">Ui/Ux <br> Designer</h4>
-                        </div>
-                        <i class="uil uil-times services_modal-close"></i>
 
-                        <ul class="services_modal-services grid">
-                            <li class="services_modal-service">
-                                <i class="uil uil-web-grid services_modal-icon"></i>
-                                <p>I develop the user interface.</p>
-                            </li>
-                            <li class="services_modal-service">
-                                <i class="uil uil-web-grid services_modal-icon"></i>
-                                <p>Web page development.</p>
-                            </li>
-                            <li class="services_modal-service">
-                                <i class="uil uil-web-grid services_modal-icon"></i>
-                                <p>I create ux element interactions.</p>
-                            </li>
-                            <li class="services_modal-service">
-                                <i class="uil uil-web-grid services_modal-icon"></i>
-                                <p>I position your company brand.</p>
-                            </li>
-                        </ul>
+                            <i class="uil uil-times services_modal-close"></i>
+
+                            <ul class="services_modal-services grid">
+                                <li class="services_modal-service">
+                                    <!-- <i class="uil uil-web-grid services_modal-icon"></i> -->
+                                    <i class="uil uil-web-grid services_modal-icon"></i>
+                                    <p>I develop the user interface.</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <!-- <i class="uil uil-web-grid services_modal-icon"></i> -->
+                                    <i class="uil uil-web-grid services_modal-icon"></i>
+                                    <p>Web page development.</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <!-- <i class="uil uil-web-grid services_modal-icon"></i> -->
+                                    <i class="uil uil-web-grid services_modal-icon"></i>
+                                    <p>I create ux element interactions.</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="uil uil-web-grid services_modal-icon"></i>
+                                    <p>I position your company brand.</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                 <!--==================== SERVICES 2 ====================-->
-                 <div class="services_content">
+                <!--==================== SERVICES 2 ====================-->
+                <div class="services_content">
                     <div>
                         <i class="uil uil-web-grid services_icon"></i>
                         <h3 class="services_title">Ui/Ux <br> Designer</h3>
@@ -480,27 +484,31 @@
                     <div class="services_modal">
                         <div class="services_modal-content">
                             <h4 class="services_modal-title">Ui/Ux <br> Designer</h4>
-                        </div>
-                        <i class="uil uil-times services_modal-close"></i>
 
-                        <ul class="services_modal-services grid">
-                            <li class="services_modal-service">
-                                <i class="uil uil-web-grid services_modal-icon"></i>
-                                <p>I develop the user interface.</p>
-                            </li>
-                            <li class="services_modal-service">
-                                <i class="uil uil-web-grid services_modal-icon"></i>
-                                <p>Web page development.</p>
-                            </li>
-                            <li class="services_modal-service">
-                                <i class="uil uil-web-grid services_modal-icon"></i>
-                                <p>I create ux element interactions.</p>
-                            </li>
-                            <li class="services_modal-service">
-                                <i class="uil uil-web-grid services_modal-icon"></i>
-                                <p>I position your company brand.</p>
-                            </li>
-                        </ul>
+                            <i class="uil uil-times services_modal-close"></i>
+
+                            <ul class="services_modal-services grid">
+                                <li class="services_modal-service">
+                                    <!-- <i class="uil uil-web-grid services_modal-icon"></i> -->
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I develop the user interface.</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <!-- <i class="uil uil-web-grid services_modal-icon"></i> -->
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>Web page development.</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <!-- <i class="uil uil-web-grid services_modal-icon"></i> -->
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I create ux element interactions.</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="uil uil-check-circle services_modal-icon"></i>
+                                    <p>I position your company brand.</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
