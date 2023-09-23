@@ -1140,4 +1140,28 @@ img {
   .home_social {
     transform: translateX(-6rem);
   }
+  .services_container {
+    grid-template-columns: repeat(3, 238px);
+  }
+  .portfolio_content {
+    column-gap: 5rem;
+  }
+  .swiper-portfolio-icon {
+    font-size: 3.5rem;
+  }
+  .swiper_button-prev {
+    left: -3.5rem;
+  }
+  .swiper_button-next {
+    right: -3.5rem;
+  }
+  .swiper-container-horizontal > .swipper-pagination-bullets {
+    bottom: -4.5rem;
+  }
+  .contact_form {
+    width: 460px;
+  }
+  .contact_inputs {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
