@@ -95,6 +95,7 @@ body.dark-theme {
 .change-theme:hover {
   color: var(--first-color);
 }
+
 /*==================== BASE ====================*/
 * {
   box-sizing: border-box;
@@ -713,12 +714,12 @@ img {
 .swiper-button-next::after {
   content: "";
 }
-/* .swiper-button-prev {
+.swiper-button-prev {
   left: -0.5rem;
 }
 .swiper-button-next {
   right: -0.5rem;
-} */
+}
 
 .swiper_portfolio-icon {
   font-size: 2rem;
