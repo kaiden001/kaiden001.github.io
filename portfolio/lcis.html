@@ -67,6 +67,26 @@
         transform: scale(1.02);
         transition: ease 100ms;
       }
+
+      .tec-container {
+        display: flex;
+        gap: 5px;
+      }
+
+      .tec-wrapper {
+        max-height: 30px;
+        max-width: 30px;
+        cursor: pointer;
+      }
+      .tec-wrapper:hover {
+        transform: scale(1.02);
+        transition: ease 99ms;
+      }
+      .tec-wrapper img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
     </style>
   </head>
   <body>
@@ -84,6 +104,27 @@
               class="img-fluid"
               alt=""
             />
+          </div>
+          <h4 class="mt-2">TECHNOLOGIES</h4>
+          <div class="tec-container">
+            <div class="tec-wrapper">
+              <img src="../assets/image/html.png" alt="" />
+            </div>
+            <div class="tec-wrapper">
+              <img src="../assets/image/css.png" alt="" />
+            </div>
+            <div class="tec-wrapper">
+              <img src="../assets/image/bootstrap.png" alt="" />
+            </div>
+            <div class="tec-wrapper">
+              <img src="../assets/image/js.png" alt="" />
+            </div>
+            <div class="tec-wrapper">
+              <img src="../assets/image/php.png" alt="" />
+            </div>
+            <div class="tec-wrapper">
+              <img src="../assets/image/mysql.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
