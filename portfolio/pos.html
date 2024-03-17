@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory System</title>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <!-- SCRIPT -->
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script src="../assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+      body {
+        font-family: "Poppins", sans-serif !important;
+      }
+      .main .intro {
+        background-color: #eaebea;
+      }
+
+      .main .intro h1 {
+        font-family: "Poppins", sans-serif !important;
+        font-weight: 400;
+        font-size: 30px;
+      }
+
+      .main .intro p {
+        font-family: "Poppins", sans-serif !important;
+        font-size: 15px;
+      }
+
+      .main .gallery {
+        background-color: #eaebea;
+      }
+
+      .main .gallery .container h1 {
+        font-family: "Poppins", sans-serif !important;
+        font-weight: 400;
+        font-size: 30px;
+      }
+
+      .main .gallery .container .row h5 {
+        font-family: "Poppins", sans-serif !important;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .main .gallery .container .row p {
+        font-family: "Poppins", sans-serif !important;
+        font-size: 14px;
+      }
+      .card {
+        border: none;
+        height: 370px;
+        max-height: 370px;
+        cursor: pointer;
+      }
+      .card:hover {
+        transform: scale(1.02);
+        transition: ease 100ms;
+      }
+      .tec-container {
+        display: flex;
+        gap: 5px;
+      }
+
+      .tec-wrapper {
+        max-height: 30px;
+        max-width: 30px;
+        cursor: pointer;
+      }
+      .tec-wrapper:hover {
+        transform: scale(1.02);
+        transition: ease 99ms;
+      }
+      .tec-wrapper img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid p-0 main">
+      <div class="container-fluid py-5 intro">
+        <div class="container">
+          <h1>POINT OF SALES SYSTEM</h1>
+          <p class="mb-3">
+            A streamlined solution for retail businesses, offering inventory
+            management, sales reporting, and smooth transaction processing for
+            enhanced efficiency and customer satisfaction.
+          </p>
+
+          <div class="container p-0">
+            <img
+              src="../assets/image/pos/pos_login.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <h4 class="mt-2">TECHNOLOGIES</h4>
+          <div class="tec-container">
+            <div class="tec-wrapper">
+              <img src="../assets/image/html.png" alt="" />
+            </div>
+            <div class="tec-wrapper">
+              <img src="../assets/image/css.png" alt="" />
+            </div>
+            <div class="tec-wrapper">
+              <img src="../assets/image/bootstrap.png" alt="" />
+            </div>
+            <div class="tec-wrapper">
+              <img src="../assets/image/js.png" alt="" />
+            </div>
+            <div class="tec-wrapper">
+              <img src="../assets/image/php.png" alt="" />
+            </div>
+            <div class="tec-wrapper">
+              <img src="../assets/image/mysql.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid py-5 gallery">
+        <div class="container">
+          <h1 class="mb-3">FEATURES AND MAIN FUNCTIONS</h1>
+          <div class="row g-3">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/pos/pos_dashboard.png"
+                  class="card-img-top"
+                  alt="mjis dashboard"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">DASHBOARD</h5>
+                  <p class="card-text">
+                    The dashboard provides an overview and counts of total
+                    sales, Product status as well as number of products
+                    available. It also shows top selling products and recent
+                    transactions for easy viewing.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/pos/pos_inventory.png"
+                  class="card-img-top"
+                  alt="inventory"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">INVENTORY</h5>
+                  <p class="card-text">
+                    The inventory page allows user to manage product details and
+                    add new products. It also has legend and sections in which
+                    it summarize count of products base on its status.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/pos/pos_qrcode.png"
+                  class="card-img-top"
+                  alt="mjis activity logs"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">GENERATE QRCODE</h5>
+                  <p class="card-text">
+                    The system also generates QRCodes for all the products, it
+                    can be used for searching and managing items.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/pos/pos_sales.png"
+                  class="card-img-top"
+                  alt="mjis pdl"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">POINT OF SALES</h5>
+                  <p class="card-text">
+                    The primary function of the POS page is to process
+                    transactions. It allows cashiers or users to input items
+                    that customers wish to purchase, calculate the total amount
+                    due, apply any discounts and accept payment.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/pos/pos_report.png"
+                  class="card-img-top"
+                  alt="request item"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">REPORTS</h5>
+                  <p class="card-text">
+                    The data reports consist of graphs base on the sales data,
+                    it also allows users to filter the data base on days, months
+                    and years.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/pos/pos_document.png"
+                  class="card-img-top"
+                  alt="mjis relative visitor"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">GENERATE DOCUMENTS</h5>
+                  <p class="card-text">
+                    The system can generate document reports about sales and
+                    inventory. Which can be used for printing.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/pos/pos_export.png"
+                  class="card-img-top"
+                  alt="mjis non-relative visitor"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">EXPORT TO CSV</h5>
+                  <p class="card-text">
+                    Allows user to generate CSV files from the system.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/pos/pos_user.png"
+                  class="card-img-top"
+                  alt="mjis users"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">USER MANAGEMENT</h5>
+                  <p class="card-text">
+                    Manage user account details as well as add a new user.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/pos/pos_setup.png"
+                  class="card-img-top"
+                  alt="mjis users"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">SYSTEM SETUP</h5>
+                  <p class="card-text">
+                    Allows user to change the logo, name and other details of
+                    the system.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/pos/pos_archives.png"
+                  class="card-img-top"
+                  alt="mjis users"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">MANAGE ARCHIVES</h5>
+                  <p class="card-text">
+                    The system also allows user to manage archive data such as
+                    products, user accounts etc. this helps user to restore
+                    recent archives.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
