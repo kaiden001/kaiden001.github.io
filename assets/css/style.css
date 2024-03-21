@@ -690,7 +690,10 @@ img {
 }
 /*==================== PORTFOLIO ====================*/
 .portfolio_container {
+  position: relative;
   overflow: initial;
+
+  padding-bottom: 2rem;
 }
 .portfolio_content {
   padding: 0 1.5rem;
@@ -715,9 +718,11 @@ img {
   content: "";
 }
 .swiper-button-prev {
+  position: absolute;
   left: -0.5rem;
 }
 .swiper-button-next {
+  position: absolute;
   right: -0.5rem;
 }
 
@@ -731,6 +736,7 @@ img {
 .swiper-pagination-bullet-active {
   background-color: var(--first-color);
 }
+
 .swiper-button-prev,
 .swiper-button-next,
 .swiper-pagination-bullet {
@@ -776,7 +782,8 @@ img {
   margin-right: var(--mb-0-75);
 }
 .testimonial_name {
-  font-size: var(--h3-font-size);
+  /* font-size: var(--h3-font-size); */
+  font-size: var(--h4-font-size);
   font-weight: var(--font-medium);
 }
 .testimonial_client {
