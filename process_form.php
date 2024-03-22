@@ -27,8 +27,8 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message']))
     $mail->SMTPSecure = 'tls'; // Use TLS encryption
     $mail->Port = 587; // Use port 587 for SMTP over SSL
 
-    $mail->setFrom($email);
-    $mail->addAddress('lopez.kean.work@gmail.com');
+    $mail->setFrom('lopez.kean.work@gmail.com');
+    $mail->addAddress($email);
 
     $mail->isHTML(true);
     $mail->Subject = $name;
