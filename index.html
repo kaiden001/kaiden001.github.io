@@ -14,6 +14,10 @@
 
     <!-- ======== CSS ======== -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
 
     <title>Portfolio</title>
   </head>
@@ -166,14 +170,14 @@
             </p>
             <div class="about_info">
               <div>
-                <span class="about_info-title">06</span>
+                <span class="about_info-title">10</span>
                 <span class="about_info-name"
                   >Months <br />
                   experience</span
                 >
               </div>
               <div>
-                <span class="about_info-title">04</span>
+                <span class="about_info-title">05</span>
                 <span class="about_info-name"
                   >Completed <br />
                   project</span
@@ -309,11 +313,19 @@
                     <span class="skills_subtitle">1 year</span>
                   </div>
                 </div>
+
                 <div class="skills_data">
                   <div class="skills_titles">
                     <h3 class="skills_name">Mysql</h3>
                     <!-- <span class="skills_number">90%</span> -->
                     <span class="skills_subtitle">1 year</span>
+                  </div>
+                </div>
+                <div class="skills_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">Laravel</h3>
+                    <!-- <span class="skills_number">90%</span> -->
+                    <span class="skills_subtitle">Started Learning</span>
                   </div>
                 </div>
               </div>
@@ -488,7 +500,7 @@
           <!--==================== SERVICES 1 ====================-->
           <div class="services_content">
             <div>
-              <i class="uil uil-web-grid services_icon"></i>
+              <i class="uil uil-browser services_icon"></i>
               <h3 class="services_title">
                 Web <br />
                 Development
@@ -502,32 +514,24 @@
             </span>
             <div class="services_modal">
               <div class="services_modal-content">
-                <h4 class="services_modal-title">
-                  Ui/Ux <br />
-                  Designer
-                </h4>
+                <h4 class="services_modal-title">Web Development</h4>
 
                 <i class="uil uil-times services_modal-close"></i>
 
                 <ul class="services_modal-services grid">
                   <li class="services_modal-service">
                     <!-- <i class="uil uil-web-grid services_modal-icon"></i> -->
-                    <i class="uil uil-web-grid services_modal-icon"></i>
-                    <p>I develop the user interface.</p>
+                    <i class="uil uil-desktop-alt services_modal-icon"></i>
+                    <p>Create responsive websites.</p>
                   </li>
                   <li class="services_modal-service">
                     <!-- <i class="uil uil-web-grid services_modal-icon"></i> -->
-                    <i class="uil uil-web-grid services_modal-icon"></i>
-                    <p>Web page development.</p>
+                    <i class="uil uil-cog services_modal-icon"></i>
+                    <p>Ensure website reliability with support.</p>
                   </li>
                   <li class="services_modal-service">
-                    <!-- <i class="uil uil-web-grid services_modal-icon"></i> -->
-                    <i class="uil uil-web-grid services_modal-icon"></i>
-                    <p>I create ux element interactions.</p>
-                  </li>
-                  <li class="services_modal-service">
-                    <i class="uil uil-web-grid services_modal-icon"></i>
-                    <p>I position your company brand.</p>
+                    <i class="uil uil-create-dashboard services_modal-icon"></i>
+                    <p>Optimize website speed and performance</p>
                   </li>
                 </ul>
               </div>
@@ -540,7 +544,7 @@
               <i class="uil uil-web-grid services_icon"></i>
               <h3 class="services_title">
                 Ui/Ux <br />
-                Designer
+                Design
               </h3>
             </div>
             <span
@@ -551,31 +555,29 @@
             </span>
             <div class="services_modal">
               <div class="services_modal-content">
-                <h4 class="services_modal-title">
-                  Ui/Ux <br />
-                  Designer
-                </h4>
+                <h4 class="services_modal-title">Ui/Ux Design</h4>
 
                 <i class="uil uil-times services_modal-close"></i>
 
                 <ul class="services_modal-services grid">
                   <li class="services_modal-service">
                     <!-- <i class="uil uil-web-grid services_modal-icon"></i> -->
-                    <i class="uil uil-check-circle services_modal-icon"></i>
+
+                    <i class="uil uil-layers-alt services_modal-icon"></i>
                     <p>I develop the user interface.</p>
                   </li>
                   <li class="services_modal-service">
                     <!-- <i class="uil uil-web-grid services_modal-icon"></i> -->
-                    <i class="uil uil-check-circle services_modal-icon"></i>
+                    <i class="uil uil-object-group services_modal-icon"></i>
                     <p>Web page development.</p>
                   </li>
                   <li class="services_modal-service">
                     <!-- <i class="uil uil-web-grid services_modal-icon"></i> -->
-                    <i class="uil uil-check-circle services_modal-icon"></i>
+                    <i class="uil uil-icons services_modal-icon"></i>
                     <p>I create ux element interactions.</p>
                   </li>
                   <li class="services_modal-service">
-                    <i class="uil uil-check-circle services_modal-icon"></i>
+                    <i class="uil uil-bring-bottom services_modal-icon"></i>
                     <p>I position your company brand.</p>
                   </li>
                 </ul>
@@ -733,7 +735,8 @@
             <div class="project_data">
               <h2 class="project_title">You have a new project</h2>
               <p class="project_description">
-                Contact me now and get a quality service on your new project.
+                I'm currently open to part-time and new opportunities, feel free
+                to reach out, and I'll do my best to get back to you!
               </p>
               <a href="#contact" class="button button--flex button--white">
                 Contact Me
@@ -863,7 +866,7 @@
             </div>
           </div>
 
-          <form action="#" class="contact_form grid" id="contact_form">
+          <form class="contact_form grid" id="contact_form" method="post">
             <div class="contact_inputs grid">
               <div class="contact_content">
                 <label for="name" class="contact_label">Name</label>
@@ -886,15 +889,7 @@
                 />
               </div>
             </div>
-            <div class="contact_content">
-              <label for="project" class="contact_label">Project</label>
-              <input
-                type="text"
-                class="contact_input"
-                id="project"
-                name="project"
-              />
-            </div>
+
             <div class="contact_content">
               <label for="message" class="contact_label">Message</label>
               <textarea
@@ -907,49 +902,27 @@
               ></textarea>
             </div>
             <div>
-              <a class="button button_flex" id="submitMessage">
-                Send Message
-                <i class="uil uil-message"></i>
+              <button
+                type="submit"
+                class="button button_flex"
+                id="submitMessage"
+                name="submitMessage"
+                style="display: none"
+              >
+                Send Message <i class="uil uil-message"></i>
+              </button>
+              <a
+                class="button button_flex"
+                id="trigger"
+                style="cursor: pointer"
+              >
+                Send Message <i class="uil uil-message"></i>
               </a>
             </div>
           </form>
         </div>
       </section>
     </main>
-
-    <script>
-      document
-        .getElementById("submitMessage")
-        .addEventListener("click", function (event) {
-          event.preventDefault(); // Prevent default form submission
-
-          // Fetch form data
-          var formData = new FormData(document.getElementById("contact_form"));
-
-          // Send form data to your backend for processing
-          fetch("process_form.php", {
-            method: "POST",
-            body: formData,
-          })
-            .then((response) => {
-              if (!response.ok) {
-                throw new Error("Network response was not ok");
-              }
-              return response.text();
-            })
-            .then((data) => {
-              // Handle successful form submission
-              console.log(data); // Log the response from the server
-              alert("Message sent successfully!");
-              // You can optionally redirect the user to a thank you page or clear the form fields here
-            })
-            .catch((error) => {
-              // Handle errors
-              console.error("Error:", error);
-              alert("Failed to send message. Please try again later.");
-            });
-        });
-    </script>
 
     <!-- ======== FOOTER ======== -->
     <footer class="footer">
@@ -967,7 +940,12 @@
               <a href="#portfolio" class="footer_link">Portfolio</a>
             </li>
             <li>
-              <a href="#contact" class="footer_link">Contact me</a>
+              <a
+                href="#contact"
+                class="footer_link"
+                style="display: flex; gap: 4px"
+                ><span>Contact</span> <span>me</span></a
+              >
             </li>
           </ul>
           <div class="footer_socials">
@@ -985,13 +963,6 @@
             >
               <i class="uil uil-instagram"></i>
             </a>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              class="footer_social"
-            >
-              <i class="uil uil-twitter-alt"></i>
-            </a>
           </div>
         </div>
         <!-- &copy; -->
@@ -1002,10 +973,103 @@
     <a href="#" class="scrollup" id="scroll-up">
       <i class="uil uil-arrow-up scrollup_icon"></i>
     </a>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- ======== SWIPER JS ======== -->
     <!-- <script src="assets/js/swiper-bundle.min.js"></script> -->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- ======== MAIN JS ======== -->
     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      $(document).ready(function () {
+        var requestInProgress = false; // Flag to track if request is in progress
+
+        $("#trigger").click(function () {
+          // Check if request is already in progress, if so, return
+          if (requestInProgress) {
+            return;
+          }
+
+          // Validate all input fields and textarea
+          var valid = true;
+          $("#contact_form input, #contact_form textarea").each(function () {
+            if (!$(this).val()) {
+              valid = false;
+              return false; // Exit the loop early if any input field is empty
+            }
+          });
+
+          // If any input field or textarea is empty, show an error message
+          if (!valid) {
+            Swal.fire({
+              icon: "warning",
+              title: "Error",
+              text: "Please fill in all fields before submitting.",
+              showConfirmButton: false,
+              timer: 1500,
+            });
+            return; // Exit the function if validation fails
+          }
+
+          // Set request in progress flag to true
+          requestInProgress = true;
+
+          // Show loading spinner
+          Swal.fire({
+            icon: "info",
+            title: "Please wait...",
+            html: "Sending message",
+            allowOutsideClick: false,
+            showConfirmButton: false,
+            onBeforeOpen: () => {
+              Swal.showLoading();
+            },
+          });
+
+          var formData = $("#contact_form").serialize();
+
+          $.ajax({
+            type: "POST",
+            url: "process_form.php",
+            data: formData,
+            success: function (response) {
+              // Show SweetAlert based on response
+              if (response === "success") {
+                Swal.fire({
+                  title: "Message Sent",
+                  text: "Your message has been successfully sent.",
+                  icon: "success",
+                  showConfirmButton: false,
+                  timer: 1500,
+                });
+                // Clear form fields
+                $("#contact_form")[0].reset();
+              } else {
+                Swal.fire({
+                  title: "Error",
+                  text: "An error occurred while sending the message.",
+                  icon: "error",
+                  showConfirmButton: false,
+                  timer: 1500,
+                });
+              }
+            },
+            error: function () {
+              Swal.fire({
+                title: "Error",
+                text: "An error occurred while sending the message.",
+                icon: "error",
+                showConfirmButton: false,
+                timer: 1500,
+              });
+            },
+            complete: function () {
+              // Reset request in progress flag to false
+              requestInProgress = false;
+            },
+          });
+        });
+      });
+    </script>
   </body>
 </html>

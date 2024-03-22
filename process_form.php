@@ -1,25 +1,46 @@
 <?php
-// Get form data
-$name = $_POST['name'];
-$email = $_POST['email'];
-$project = $_POST['project'];
-$message = $_POST['message'];
 
-// Construct email message
-$to = 'lopez.kean.work@gmail.com';
-$subject = 'New message from your website';
-$body = "Name: $name\nEmail: $email\nProject: $project\nMessage: $message";
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-// Set headers
-$headers = "From: $name <$email>\r\n";
-$headers .= "Reply-To: $email\r\n";
-$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+require 'assets/phpmailer/src/Exception.php';
+require 'assets/phpmailer/src/PHPMailer.php';
+require 'assets/phpmailer/src/SMTP.php';
 
-// Send email
-if (mail($to, $subject, $body, $headers)) {
-    // If mail sent successfully
-    echo 'Message sent successfully!';
+if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    // Validate email
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "error";
+        exit;
+    }
+
+    $mail = new PHPMailer(true);
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'lopez.kean.work@gmail.com';
+    $mail->Password = 'lrpd jyjh edsp yoyq'; // app password 
+    $mail->SMTPSecure = 'tls'; // Use TLS encryption
+    $mail->Port = 587; // Use port 587 for SMTP over SSL
+
+    $mail->setFrom($email);
+    $mail->addAddress('lopez.kean.work@gmail.com');
+
+    $mail->isHTML(true);
+    $mail->Subject = $name;
+    $mail->Body = $message;
+
+    try {
+        $mail->send();
+
+        echo "success";
+    } catch (Exception $e) {
+        echo "error";
+    }
 } else {
-    // If mail sending failed
-    echo 'Failed to send message. Please try again later.';
+    echo "error";
 }
