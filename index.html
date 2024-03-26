@@ -869,7 +869,6 @@
           <form
             class="contact_form grid"
             id="contact_form"
-            action="https://formkeep.com/f/1f59b429915b"
             accept-charset="UTF-8"
             enctype="multipart/form-data"
             method="POST"
@@ -987,40 +986,87 @@
     <!-- ======== MAIN JS ======== -->
     <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script>
       $(document).ready(function () {
-        // Function to handle form submission
-        function handleSubmit() {
-          // Display SweetAlert2 alert without any buttons
-          Swal.fire({
-            title: "Thank you!",
-            text: "I'll do my best to get back to you!.",
-            icon: "success",
-            showConfirmButton: false,
-            allowOutsideClick: false,
-            timer: 1500, // Time in milliseconds
-            timerProgressBar: true, // Show progress bar during the timeout
-          }).then(() => {
-            // Redirect user to index.html after the timeout
-            setTimeout(() => {
-              window.location.href = "index.html";
-            }, 1500); // Same time as timer
-          });
-        }
+        var requestInProgress = false; // Flag to track if request is in progress
 
-        // Handle click event on #trigger button
         $("#trigger").click(function () {
-          // Simulate form submission
-          $("#submitMessage").click();
-        });
+          // Check if request is already in progress, if so, return
+          if (requestInProgress) {
+            return;
+          }
 
-        // Handle form submission
-        $("#contact_form").submit(function (event) {
-          // Prevent default form submission
-          event.preventDefault();
+          // Validate all input fields and textarea
+          var valid = true;
+          $("#contact_form input, #contact_form textarea").each(function () {
+            if (!$(this).val()) {
+              valid = false;
+              return false; // Exit the loop early if any input field is empty
+            }
+          });
 
-          // Call the function to handle form submission
-          handleSubmit();
+          // If any input field or textarea is empty, show an error message
+          if (!valid) {
+            Swal.fire({
+              icon: "warning",
+              title: "Error",
+              text: "Please fill in all fields before submitting.",
+              showConfirmButton: false,
+              timer: 1500,
+            });
+            return; // Exit the function if validation fails
+          }
+
+          // Set request in progress flag to true
+          requestInProgress = true;
+
+          // Show loading spinner
+          Swal.fire({
+            title:
+              '<div class="spinner"><div class="dot1"></div><div class="dot2"></div><div class="dot3"></div></div>',
+            html: '<div style="text-align: center;">Please wait...</div>',
+            html: "Sending message",
+            allowOutsideClick: false,
+            showConfirmButton: false,
+            onBeforeOpen: () => {
+              Swal.showLoading();
+            },
+          });
+
+          var formData = $("#contact_form").serialize();
+
+          $.ajax({
+            type: "POST",
+            url: "https://formkeep.com/f/28fd223983d5",
+            data: formData,
+            success: function (response) {
+              // Show SweetAlert based on response
+
+              Swal.fire({
+                title: "Message Sent",
+                text: "Your message has been successfully sent.",
+                icon: "success",
+                showConfirmButton: false,
+                timer: 1500,
+              });
+              // Clear form fields
+              $("#contact_form")[0].reset();
+            },
+            error: function () {
+              Swal.fire({
+                title: "Error",
+                text: "An error occurred while sending the message.",
+                icon: "error",
+                showConfirmButton: false,
+                timer: 1500,
+              });
+            },
+            complete: function () {
+              // Reset request in progress flag to false
+              requestInProgress = false;
+            },
+          });
         });
       });
     </script>
