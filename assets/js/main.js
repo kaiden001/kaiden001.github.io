@@ -197,3 +197,87 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+// send gmail
+
+$(document).ready(function () {
+  var requestInProgress = false; // Flag to track if request is in progress
+
+  $("#trigger").click(function () {
+    // Check if request is already in progress, if so, return
+    if (requestInProgress) {
+      return;
+    }
+
+    // Validate all input fields and textarea
+    var valid = true;
+    $("#contact_form input, #contact_form textarea").each(function () {
+      if (!$(this).val()) {
+        valid = false;
+        return false; // Exit the loop early if any input field is empty
+      }
+    });
+
+    // If any input field or textarea is empty, show an error message
+    if (!valid) {
+      Swal.fire({
+        icon: "warning",
+        title: "Error",
+        text: "Please fill in all fields before submitting.",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      return; // Exit the function if validation fails
+    }
+
+    // Set request in progress flag to true
+    requestInProgress = true;
+
+    // Show loading spinner
+    Swal.fire({
+      title:
+        '<div class="spinner"><div class="dot1"></div><div class="dot2"></div><div class="dot3"></div></div>',
+      html: '<div style="text-align: center;">Please wait...</div>',
+      html: "Sending message",
+      allowOutsideClick: false,
+      showConfirmButton: false,
+      onBeforeOpen: () => {
+        Swal.showLoading();
+      },
+    });
+
+    var formData = $("#contact_form").serialize();
+
+    $.ajax({
+      type: "POST",
+      url: "https://formkeep.com/f/28fd223983d5",
+      data: formData,
+      success: function (response) {
+        // Show SweetAlert based on response
+
+        Swal.fire({
+          title: "Message Sent",
+          text: "Your message has been successfully sent.",
+          icon: "success",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        // Clear form fields
+        $("#contact_form")[0].reset();
+      },
+      error: function () {
+        Swal.fire({
+          title: "Error",
+          text: "An error occurred while sending the message.",
+          icon: "error",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      },
+      complete: function () {
+        // Reset request in progress flag to false
+        requestInProgress = false;
+      },
+    });
+  });
+});
