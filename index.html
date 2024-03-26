@@ -866,7 +866,14 @@
             </div>
           </div>
 
-          <form class="contact_form grid" id="contact_form" method="post">
+          <form
+            class="contact_form grid"
+            id="contact_form"
+            action="https://formkeep.com/f/28fd223983d5"
+            accept-charset="UTF-8"
+            enctype="multipart/form-data"
+            method="POST"
+          >
             <div class="contact_inputs grid">
               <div class="contact_content">
                 <label for="name" class="contact_label">Name</label>
@@ -982,92 +989,38 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
       $(document).ready(function () {
-        var requestInProgress = false; // Flag to track if request is in progress
-
-        $("#trigger").click(function () {
-          // Check if request is already in progress, if so, return
-          if (requestInProgress) {
-            return;
-          }
-
-          // Validate all input fields and textarea
-          var valid = true;
-          $("#contact_form input, #contact_form textarea").each(function () {
-            if (!$(this).val()) {
-              valid = false;
-              return false; // Exit the loop early if any input field is empty
-            }
-          });
-
-          // If any input field or textarea is empty, show an error message
-          if (!valid) {
-            Swal.fire({
-              icon: "warning",
-              title: "Error",
-              text: "Please fill in all fields before submitting.",
-              showConfirmButton: false,
-              timer: 1500,
-            });
-            return; // Exit the function if validation fails
-          }
-
-          // Set request in progress flag to true
-          requestInProgress = true;
-
-          // Show loading spinner
+        // Function to handle form submission
+        function handleSubmit() {
+          // Display SweetAlert2 alert without any buttons
           Swal.fire({
-            icon: "info",
-            title: "Please wait...",
-            html: "Sending message",
-            allowOutsideClick: false,
+            title: "Thank you!",
+            text: "I'll do my best to get back to you!.",
+            icon: "success",
             showConfirmButton: false,
-            onBeforeOpen: () => {
-              Swal.showLoading();
-            },
+            allowOutsideClick: false,
+            timer: 1500, // Time in milliseconds
+            timerProgressBar: true, // Show progress bar during the timeout
+          }).then(() => {
+            // Redirect user to index.html after the timeout
+            setTimeout(() => {
+              window.location.href = "index.html";
+            }, 1500); // Same time as timer
           });
+        }
 
-          var formData = $("#contact_form").serialize();
+        // Handle click event on #trigger button
+        $("#trigger").click(function () {
+          // Simulate form submission
+          $("#submitMessage").click();
+        });
 
-          $.ajax({
-            type: "POST",
-            url: "process_form.php",
-            data: formData,
-            success: function (response) {
-              // Show SweetAlert based on response
-              if (response === "success") {
-                Swal.fire({
-                  title: "Message Sent",
-                  text: "Your message has been successfully sent.",
-                  icon: "success",
-                  showConfirmButton: false,
-                  timer: 1500,
-                });
-                // Clear form fields
-                $("#contact_form")[0].reset();
-              } else {
-                Swal.fire({
-                  title: "Error",
-                  text: "An error occurred while sending the message.",
-                  icon: "error",
-                  showConfirmButton: false,
-                  timer: 1500,
-                });
-              }
-            },
-            error: function () {
-              Swal.fire({
-                title: "Error",
-                text: "An error occurred while sending the message.",
-                icon: "error",
-                showConfirmButton: false,
-                timer: 1500,
-              });
-            },
-            complete: function () {
-              // Reset request in progress flag to false
-              requestInProgress = false;
-            },
-          });
+        // Handle form submission
+        $("#contact_form").submit(function (event) {
+          // Prevent default form submission
+          event.preventDefault();
+
+          // Call the function to handle form submission
+          handleSubmit();
         });
       });
     </script>
