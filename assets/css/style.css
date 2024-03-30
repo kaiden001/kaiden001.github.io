@@ -534,6 +534,42 @@ img {
   transform: rotate(-180deg);
 }
 
+.skill_title {
+  text-align: center;
+}
+
+.skill-holder {
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  padding: 0.6rem 0.5rem 1.25rem 1.5rem;
+}
+.skill-holder:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.skill-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+.skill-wrapper button {
+  padding: 0.6rem;
+  background-color: var(--first-color);
+  color: #fff;
+  font-family: var(--body-font);
+  font-size: var(--smaller-font-size);
+  border: none;
+  border-radius: 0.3rem;
+  outline: none;
+  cursor: pointer;
+}
+.skill-wrapper button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background-color: var(--first-color-alt);
+}
 /*==================== QUALIFICATION ====================*/
 .qualification_tabs {
   display: flex;
@@ -618,9 +654,12 @@ img {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
 }
+
 .services_content:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
+
 .services_icon {
   display: block;
   font-size: 1.5rem;
