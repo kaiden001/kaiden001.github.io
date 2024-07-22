@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skill Registration System</title>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <!-- SCRIPT -->
+    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script src="../assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+      body {
+        font-family: "Poppins", sans-serif !important;
+      }
+      .main .intro {
+        background-color: #eaebea;
+      }
+
+      .main .intro h1 {
+        font-family: "Poppins", sans-serif !important;
+        font-weight: 400;
+        font-size: 30px;
+      }
+
+      .main .intro p {
+        font-family: "Poppins", sans-serif !important;
+        font-size: 15px;
+      }
+
+      .main .gallery {
+        background-color: #eaebea;
+      }
+
+      .main .gallery .container h1 {
+        font-family: "Poppins", sans-serif !important;
+        font-weight: 400;
+        font-size: 30px;
+      }
+
+      .main .gallery .container .row h5 {
+        font-family: "Poppins", sans-serif !important;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .main .gallery .container .row p {
+        font-family: "Poppins", sans-serif !important;
+        font-size: 14px;
+      }
+      .card {
+        border: none;
+        height: 370px;
+        max-height: 370px;
+        cursor: pointer;
+      }
+      .card:hover {
+        transform: scale(1.02);
+        transition: ease 100ms;
+      }
+
+      .tec-container {
+        display: flex;
+        gap: 5px;
+      }
+
+      .tec-wrapper {
+        max-height: 30px;
+        max-width: 30px;
+        cursor: pointer;
+      }
+      .tec-wrapper:hover {
+        transform: scale(1.02);
+        transition: ease 99ms;
+      }
+      .tec-wrapper img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid p-0 main">
+      <div class="container-fluid py-5 intro">
+        <div class="container">
+          <h1 class="text-uppercase">Skill Registration System</h1>
+          <p class="mb-3">
+            A platform designed to enhance efficiency, accessibility, and
+            transparency in connecting skills and program requests.
+          </p>
+          <div class="container p-0">
+            <img
+              src="../assets/image/skill/skill_welcome.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <h4 class="mt-2">TECHNOLOGIES</h4>
+          <div class="tec-container">
+            <div class="tec-wrapper">
+              <img src="../assets/image/html.png" alt="" />
+            </div>
+            <div class="tec-wrapper">
+              <img src="../assets/image/css.png" alt="" />
+            </div>
+            <div class="tec-wrapper">
+              <img src="../assets/image/tailwind.png" alt="" />
+            </div>
+            <div class="tec-wrapper">
+              <img src="../assets/image/js.png" alt="" />
+            </div>
+            <div class="tec-wrapper">
+              <img src="../assets/image/laravel.png" alt="" />
+            </div>
+            <div class="tec-wrapper">
+              <img src="../assets/image/mysql.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid py-5 gallery">
+        <div class="container">
+          <h1 class="mb-3">FEATURES AND MAIN FUNCTIONS</h1>
+          <div class="row g-3">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/skill/skill_dashboard.png"
+                  class="card-img-top"
+                  alt="dashboard"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">DASHBOARD</h5>
+                  <p class="card-text">
+                    The Dashboard presents key metrics such as registered and
+                    verified users, pending verifications, and total skills,
+                    with graphs for skill distribution, in-demand skills, and
+                    user demographics. It also highlights users with the most
+                    skills and recent registrants.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/skill/talents.png"
+                  class="card-img-top"
+                  alt="talents"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">TALENTS</h5>
+                  <p class="card-text">
+                    The Talent Page displays a list of registered users'
+                    talents, including their skills and certifications. You can
+                    show interest in a user's profile by clicking the heart
+                    button, which will instantly notify the user of your
+                    interest.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/skill/global_search.png"
+                  class="card-img-top"
+                  alt="global search"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">GLOBAL SEARCH</h5>
+                  <p class="card-text">
+                    The Global Search feature allows users to find specific
+                    skills or individuals. For example, searching "cooking" will
+                    display users with cooking skills, and users can also search
+                    for specific people.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/skill/post.png"
+                  class="card-img-top"
+                  alt="post"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">POSTS</h5>
+                  <p class="card-text">
+                    The Post Page lets users create posts for specific skills,
+                    like painting or cooking. Interested users can click the
+                    heart button to notify the poster, who can then view
+                    interested users and check if their skills match the post's
+                    requirements.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/skill/programs.png"
+                  class="card-img-top"
+                  alt="programs"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">PROGRAMS</h5>
+                  <p class="card-text">
+                    The Programs Page allows the administrator to post programs,
+                    such as training sessions. Users can view these programs,
+                    express interest, and request to join. The administrator can
+                    view both interested users and those who have requested to
+                    join.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/skill/join_list.png"
+                  class="card-img-top"
+                  alt="programs"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">REQUEST JOIN LIST</h5>
+                  <p class="card-text">
+                    The Request Join List page allows administrators to view
+                    users who have requested to join posted programs.
+                    Administrators can manage requests by accepting or rejecting
+                    them, with notifications sent to users regarding their
+                    application status.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/skill/reminders.png"
+                  class="card-img-top"
+                  alt="reminders"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">REMINDERS</h5>
+                  <p class="card-text">
+                    The Reminders page helps both administrators and users track
+                    program schedules. Administrators see upcoming programs,
+                    while users can view schedules for programs they’ve joined.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/skill/reports.png"
+                  class="card-img-top"
+                  alt="reports"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">REPORTS</h5>
+                  <p class="card-text">
+                    The system allows users to report posts they believe violate
+                    regulations. Administrators can review and verify these
+                    reports, update their status, or mark them as resolved on
+                    the Report Page.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/skill/skills.png"
+                  class="card-img-top"
+                  alt="skills"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">REGISTERED SKILLS</h5>
+                  <p class="card-text">
+                    The Registered Skills page allows administrators to manage
+                    all registered skills. They can view users associated with
+                    each skill and edit or remove skills from the system if
+                    needed.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/skill/users.png"
+                  class="card-img-top"
+                  alt="users"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">REGISTERED USERS</h5>
+                  <p class="card-text">
+                    The Registered Users page allows administrators to manage
+                    user accounts. They can change user statuses, adjust access
+                    levels, disable accounts, and view user profiles.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/skill/logs.png"
+                  class="card-img-top"
+                  alt="logs"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">ACTIVITY LOGS</h5>
+                  <p class="card-text">
+                    The Activity Logs page allows administrators to monitor user
+                    actions within the system. It shows the status of user
+                    activities, such as whether profile changes were
+                    successfully made.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/skill/account.png"
+                  class="card-img-top"
+                  alt="logs"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">ACCOUNT SETTING</h5>
+                  <p class="card-text">
+                    The Account Settings page allows users to update their
+                    profile picture and change their account password.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <img
+                  src="../assets/image/skill/notification.png"
+                  class="card-img-top"
+                  alt="logs"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">NOTIFICATIONS</h5>
+                  <p class="card-text">
+                    The system uses WebSocket to provide instant notifications.
+                    Users receive immediate updates when someone shows interest
+                    in their post or profile, or when a program join request is
+                    accepted or rejected.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
