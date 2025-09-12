@@ -22,8 +22,8 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message']))
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'lopez.kean.work@gmail.com';
-    $mail->Password = 'lrpd jyjh edsp yoyq'; // app password 
+    $mail->Username = '*****@gmail.com';
+    $mail->Password = '********'; // app password 
     $mail->SMTPSecure = 'tls'; // Use TLS encryption
     $mail->Port = 587; // Use port 587 for SMTP over SSL
 
